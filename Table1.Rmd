@@ -37,3 +37,11 @@ http://cran.r-project.org/web/packages/tableone/index.html
 ```{r}
 library(tableone)
 ```
+
+
+There are two categorical variables, sex and race. Categorical variables will need to be transformed into factors. 
+
+```{r}
+catvarstofactors <- c("sex", "race")
+hw1data[catvarstofactors] <- lapply(hw1data[catvarstofactors], factor)
+```
