@@ -29,3 +29,11 @@ hw1data$race <-factor(hw1data$race, levels=c(0,1), labels=c("White", "Non-white"
 hw1data$sex <-factor(hw1data$sex, levels=c(0,1), labels=c("Male","Female"))
 hw1data$group <-factor(hw1data$group, levels=c(0,1), labels=c("Placebo", "Treatment"))
 ```
+
+
+You will need to load the package for creating a table into R.  The package can be downloaded from:  
+http://cran.r-project.org/web/packages/tableone/index.html  
+
+```{r}
+library(tableone)
+```
